@@ -1,0 +1,35 @@
+### Create employee 
+POST http://127.0.0.1:4040/api/employees/create
+Content-Type: application/json
+Connection: keep-alive
+
+{
+   "name": "John Doe",
+   "email": "john@doe.com",
+   "position": "Manager",
+   "department": "Sales",
+   "startDate": "19-03-2005"
+}
+
+### Read all employees record
+GET  http://127.0.0.1:4040/api/employees/read/all
+Content-Type: application/json
+Connection: keep-alive
+
+### Update an employee record
+PUT http://127.0.0.1:4040/api/employees/update/660b20d7f2d29b73ae3d9b1e
+Content-Type: application/json
+Connection: keep-alive
+
+{
+   "name": "John Doe",
+   "email": "john@doe1.com",
+   "position": "Manager1",
+   "department": "Sales",
+   "startDate": "19-03-2005"
+}
+
+### Delete an employee record
+DELETE http://127.0.0.1:4040/api/employees/delete/660b20d7f2d29b73ae3d9b1e
+Content-Type: application/json
+Connection: keep-alive
